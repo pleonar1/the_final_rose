@@ -6,6 +6,7 @@ class CreateContestants < ActiveRecord::Migration[5.2]
       t.string :hometown
       t.string :state
       t.references :bachelorette, foreign_key: true
+      t.references :outing, foreign_key: true
 
       t.timestamps
     end
